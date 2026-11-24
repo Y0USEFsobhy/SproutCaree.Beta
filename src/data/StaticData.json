@@ -1,0 +1,2007 @@
+{
+  "nurseries": [
+    { "id": 1, "name": "Sunshine Nursery", "plan": "free", "active": true },
+    { "id": 2, "name": "Little Stars Nursery", "plan": "pro", "active": true }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "nurseryId": null,
+      "role": "super_admin",
+      "name": "Super Admin",
+      "email": "super@nursery.app",
+      "phone": "01000000001",
+      "password": "123456"
+    },
+
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "role": "admin",
+      "name": "Sara Hassan",
+      "email": "sara@sunshine.com",
+      "phone": "01000000002",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "nurseryId": 2,
+      "role": "admin",
+      "name": "Hoda Ali",
+      "email": "hoda@littlestars.com",
+      "phone": "01000000003",
+      "password": "123456"
+    },
+
+    {
+      "id": 4,
+      "nurseryId": 1,
+      "role": "teacher",
+      "name": "Mona Adel",
+      "email": "mona@sunshine.com",
+      "phone": "01000000004",
+      "classId": 1,
+      "password": "123456"
+    },
+    {
+      "id": 5,
+      "nurseryId": 1,
+      "role": "teacher",
+      "name": "Dina Samir",
+      "email": "dina@sunshine.com",
+      "phone": "01000000005",
+      "classId": 2,
+      "password": "123456"
+    },
+    {
+      "id": 6,
+      "nurseryId": 2,
+      "role": "teacher",
+      "name": "Rania Fathy",
+      "email": "rania@littlestars.com",
+      "phone": "01000000006",
+      "classId": 3,
+      "password": "123456"
+    },
+
+    {
+      "id": 7,
+      "nurseryId": 1,
+      "role": "parent",
+      "name": "Ahmed Mahmoud",
+      "email": "ahmed@mail.com",
+      "phone": "01000000007",
+      "password": "123456"
+    },
+    {
+      "id": 8,
+      "nurseryId": 1,
+      "role": "parent",
+      "name": "Nour Ibrahim",
+      "email": "nour@mail.com",
+      "phone": "01000000008",
+      "password": "123456"
+    },
+    {
+      "id": 9,
+      "nurseryId": 1,
+      "role": "parent",
+      "name": "Khaled Youssef",
+      "email": "khaled@mail.com",
+      "phone": "01000000009",
+      "password": "123456"
+    },
+    {
+      "id": 10,
+      "nurseryId": 2,
+      "role": "parent",
+      "name": "Heba Salah",
+      "email": "heba@mail.com",
+      "phone": "01000000010",
+      "password": "123456"
+    }
+  ],
+
+  "classes": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "name": "Butterflies",
+      "ageGroup": "2-3 years",
+      "teacherId": 4
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "name": "Rainbows",
+      "ageGroup": "3-4 years",
+      "teacherId": 5
+    },
+    {
+      "id": 3,
+      "nurseryId": 2,
+      "name": "Stars",
+      "ageGroup": "3-4 years",
+      "teacherId": 6
+    }
+  ],
+
+  "children": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "name": "Omar Ahmed",
+      "birthDate": "2023-03-14",
+      "gender": "male",
+      "classId": 1,
+      "parentIds": [7, 8],
+      "photo": null,
+      "notes": "",
+      "active": true
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "name": "Laila Ahmed",
+      "birthDate": "2022-06-02",
+      "gender": "female",
+      "classId": 2,
+      "parentIds": [7],
+      "photo": null,
+      "notes": "",
+      "active": true
+    },
+    {
+      "id": 3,
+      "nurseryId": 1,
+      "name": "Yara Khaled",
+      "birthDate": "2023-01-20",
+      "gender": "female",
+      "classId": 1,
+      "parentIds": [9],
+      "photo": null,
+      "notes": "",
+      "active": true
+    },
+    {
+      "id": 4,
+      "nurseryId": 1,
+      "name": "Adam Khaled",
+      "birthDate": "2022-09-11",
+      "gender": "male",
+      "classId": 2,
+      "parentIds": [9],
+      "photo": null,
+      "notes": "",
+      "active": true
+    },
+    {
+      "id": 5,
+      "nurseryId": 2,
+      "name": "Salma Heba",
+      "birthDate": "2022-11-05",
+      "gender": "female",
+      "classId": 3,
+      "parentIds": [10],
+      "photo": null,
+      "notes": "",
+      "active": true
+    },
+    {
+      "id": 6,
+      "nurseryId": 2,
+      "name": "Malek Heba",
+      "birthDate": "2022-04-18",
+      "gender": "male",
+      "classId": 3,
+      "parentIds": [10],
+      "photo": null,
+      "notes": "",
+      "active": true
+    }
+  ],
+
+  "attendance": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "childId": 1,
+      "date": "2026-10-11",
+      "status": "present"
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "childId": 2,
+      "date": "2026-10-11",
+      "status": "present"
+    },
+    {
+      "id": 3,
+      "nurseryId": 1,
+      "childId": 3,
+      "date": "2026-10-11",
+      "status": "absent"
+    },
+    {
+      "id": 4,
+      "nurseryId": 1,
+      "childId": 4,
+      "date": "2026-10-11",
+      "status": "late"
+    },
+    {
+      "id": 5,
+      "nurseryId": 1,
+      "childId": 1,
+      "date": "2026-10-13",
+      "status": "present"
+    },
+    {
+      "id": 6,
+      "nurseryId": 1,
+      "childId": 2,
+      "date": "2026-10-13",
+      "status": "present"
+    },
+    {
+      "id": 7,
+      "nurseryId": 1,
+      "childId": 3,
+      "date": "2026-10-13",
+      "status": "present"
+    },
+    {
+      "id": 8,
+      "nurseryId": 1,
+      "childId": 4,
+      "date": "2026-10-13",
+      "status": "absent"
+    },
+    {
+      "id": 9,
+      "nurseryId": 2,
+      "childId": 5,
+      "date": "2026-10-13",
+      "status": "late"
+    },
+    {
+      "id": 10,
+      "nurseryId": 2,
+      "childId": 6,
+      "date": "2026-10-13",
+      "status": "present"
+    }
+  ],
+
+  "notes": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "childId": 1,
+      "teacherId": 4,
+      "date": "2026-10-12",
+      "mood": "happy",
+      "meal": "ate well",
+      "nap": "slept 1 hour",
+      "text": "Omar enjoyed the painting activity today."
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "childId": 2,
+      "teacherId": 5,
+      "date": "2026-10-12",
+      "mood": "calm",
+      "meal": "ate a little",
+      "nap": "did not nap",
+      "text": "Laila played with the blocks for a long time."
+    },
+    {
+      "id": 3,
+      "nurseryId": 1,
+      "childId": 3,
+      "teacherId": 4,
+      "date": "2026-10-12",
+      "mood": "happy",
+      "meal": "ate well",
+      "nap": "slept 2 hours",
+      "text": "Yara learned a new song."
+    },
+    {
+      "id": 4,
+      "nurseryId": 2,
+      "childId": 5,
+      "teacherId": 6,
+      "date": "2026-10-12",
+      "mood": "happy",
+      "meal": "ate well",
+      "nap": "slept 1 hour",
+      "text": "Salma helped tidy the toys."
+    }
+  ],
+
+  "announcements": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "title": "Trip on Friday",
+      "text": "We are going to the park this Friday. Please send a water bottle and a hat.",
+      "audience": "all",
+      "classId": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "title": "Butterflies class: bring a spare outfit",
+      "text": "Please pack one set of spare clothes in your child's bag.",
+      "audience": "class",
+      "classId": 1,
+      "date": "2026-10-11"
+    },
+    {
+      "id": 3,
+      "nurseryId": 2,
+      "title": "Parents meeting",
+      "text": "Parents meeting next Sunday at 5 PM.",
+      "audience": "all",
+      "classId": null,
+      "date": "2026-10-09"
+    }
+  ],
+
+  "schedule": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 3,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 4,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Letters & Sounds Play",
+      "description": "Explore letters and their sounds through playful listening, matching, and early literacy activities.",
+      "type": "learning"
+    },
+    {
+      "id": 5,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 6,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 7,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 8,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 9,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Story Time",
+      "description": "Listen to an engaging story, look closely at the pictures, and share thoughts about the characters.",
+      "type": "learning"
+    },
+    {
+      "id": 10,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "sunday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 11,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 12,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 13,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 14,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Counting Games",
+      "description": "Practice counting, number recognition, and simple patterns with hands-on games.",
+      "type": "learning"
+    },
+    {
+      "id": 15,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 16,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 17,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 18,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 19,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Music & Singing",
+      "description": "Sing familiar songs, explore rhythm, and move along to music using voices and simple instruments.",
+      "type": "learning"
+    },
+    {
+      "id": 20,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "monday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 21,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 22,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 23,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 24,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Nature Walk & Discovery",
+      "description": "Observe plants, insects, and other outdoor details while asking questions and collecting discoveries.",
+      "type": "learning"
+    },
+    {
+      "id": 25,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 26,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 27,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 28,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 29,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Sensory Play",
+      "description": "Explore different textures, colors, and materials through supervised hands-on play.",
+      "type": "learning"
+    },
+    {
+      "id": 30,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "tuesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 31,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 32,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 33,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 34,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Movement & Balance",
+      "description": "Practice coordination and body control through guided movement, balancing, and simple obstacle activities.",
+      "type": "learning"
+    },
+    {
+      "id": 35,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 36,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 37,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 38,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 39,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Role Play & Drama",
+      "description": "Use costumes, props, and imagination to act out stories and everyday situations together.",
+      "type": "learning"
+    },
+    {
+      "id": 40,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "wednesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 41,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 42,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 43,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 44,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Colors & Shapes",
+      "description": "Identify and sort colors and shapes through creative, hands-on matching activities.",
+      "type": "learning"
+    },
+    {
+      "id": 45,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 46,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 47,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 48,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 49,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Art & Painting",
+      "description": "Experiment with paints and art materials to create original work and express ideas.",
+      "type": "learning"
+    },
+    {
+      "id": 50,
+      "nurseryId": 1,
+      "classId": 1,
+      "day": "thursday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 51,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 52,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 53,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 54,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Arabic Letters & Early Writing",
+      "description": "Recognize Arabic letters and practice early pencil control through tracing and guided writing activities.",
+      "type": "learning"
+    },
+    {
+      "id": 55,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 56,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 57,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 58,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 59,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Story Time",
+      "description": "Listen to an engaging story, look closely at the pictures, and share thoughts about the characters.",
+      "type": "learning"
+    },
+    {
+      "id": 60,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "sunday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 61,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 62,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 63,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 64,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Numbers & Counting",
+      "description": "Build number recognition and counting skills with objects, movement, and simple group activities.",
+      "type": "learning"
+    },
+    {
+      "id": 65,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 66,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 67,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 68,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 69,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Music & Singing",
+      "description": "Sing familiar songs, explore rhythm, and move along to music using voices and simple instruments.",
+      "type": "learning"
+    },
+    {
+      "id": 70,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "monday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 71,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 72,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 73,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 74,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Science Experiments",
+      "description": "Make observations and explore simple science ideas through safe, teacher-guided experiments.",
+      "type": "learning"
+    },
+    {
+      "id": 75,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 76,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 77,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 78,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 79,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Sensory Play",
+      "description": "Explore different textures, colors, and materials through supervised hands-on play.",
+      "type": "learning"
+    },
+    {
+      "id": 80,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "tuesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 81,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 82,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 83,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 84,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Sports & Motor Skills",
+      "description": "Develop coordination, balance, and teamwork through age-appropriate sports and movement games.",
+      "type": "learning"
+    },
+    {
+      "id": 85,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 86,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 87,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 88,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 89,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Role Play & Drama",
+      "description": "Use costumes, props, and imagination to act out stories and everyday situations together.",
+      "type": "learning"
+    },
+    {
+      "id": 90,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "wednesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 91,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 92,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 93,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 94,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Show & Tell",
+      "description": "Take turns sharing a favorite object or idea and practice speaking and listening with the group.",
+      "type": "learning"
+    },
+    {
+      "id": 95,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 96,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 97,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 98,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 99,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Art & Painting",
+      "description": "Experiment with paints and art materials to create original work and express ideas.",
+      "type": "learning"
+    },
+    {
+      "id": 100,
+      "nurseryId": 1,
+      "classId": 2,
+      "day": "thursday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 101,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 102,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 103,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 104,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Arabic Letters & Early Writing",
+      "description": "Recognize Arabic letters and practice early pencil control through tracing and guided writing activities.",
+      "type": "learning"
+    },
+    {
+      "id": 105,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 106,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 107,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 108,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 109,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Story Time",
+      "description": "Listen to an engaging story, look closely at the pictures, and share thoughts about the characters.",
+      "type": "learning"
+    },
+    {
+      "id": 110,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "sunday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 111,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 112,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 113,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 114,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Numbers & Counting",
+      "description": "Build number recognition and counting skills with objects, movement, and simple group activities.",
+      "type": "learning"
+    },
+    {
+      "id": 115,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 116,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 117,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 118,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 119,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Music & Singing",
+      "description": "Sing familiar songs, explore rhythm, and move along to music using voices and simple instruments.",
+      "type": "learning"
+    },
+    {
+      "id": 120,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "monday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 121,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 122,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 123,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 124,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Science Experiments",
+      "description": "Make observations and explore simple science ideas through safe, teacher-guided experiments.",
+      "type": "learning"
+    },
+    {
+      "id": 125,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 126,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 127,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 128,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 129,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Sensory Play",
+      "description": "Explore different textures, colors, and materials through supervised hands-on play.",
+      "type": "learning"
+    },
+    {
+      "id": 130,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "tuesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 131,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 132,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 133,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 134,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Sports & Motor Skills",
+      "description": "Develop coordination, balance, and teamwork through age-appropriate sports and movement games.",
+      "type": "learning"
+    },
+    {
+      "id": 135,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 136,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 137,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 138,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 139,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Role Play & Drama",
+      "description": "Use costumes, props, and imagination to act out stories and everyday situations together.",
+      "type": "learning"
+    },
+    {
+      "id": 140,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "wednesday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    },
+    {
+      "id": 141,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "07:30",
+      "endTime": "08:30",
+      "activity": "Arrival & Free Play",
+      "description": "Settle into the classroom, greet friends and teachers, and choose from supervised play activities.",
+      "type": "play"
+    },
+    {
+      "id": 142,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "08:30",
+      "endTime": "09:00",
+      "activity": "Breakfast",
+      "description": "Enjoy a nourishing morning meal together and practice independent eating and table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 143,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "activity": "Circle Time (songs & calendar)",
+      "description": "Gather as a class to sing, review the calendar and weather, and talk about the day ahead.",
+      "type": "routine"
+    },
+    {
+      "id": 144,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "activity": "Show & Tell",
+      "description": "Take turns sharing a favorite object or idea and practice speaking and listening with the group.",
+      "type": "learning"
+    },
+    {
+      "id": 145,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "activity": "Outdoor Play",
+      "description": "Build strength and coordination through active outdoor games and freely chosen playground activities.",
+      "type": "play"
+    },
+    {
+      "id": 146,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "11:30",
+      "endTime": "12:15",
+      "activity": "Lunch",
+      "description": "Share a balanced midday meal and practice handwashing, self-help skills, and good table manners.",
+      "type": "meal"
+    },
+    {
+      "id": 147,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "activity": "Nap Time",
+      "description": "Rest in a calm, comfortable space while teachers support each child’s individual sleep routine.",
+      "type": "rest"
+    },
+    {
+      "id": 148,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "activity": "Snack",
+      "description": "Take a break to enjoy a healthy snack, drink water, and recharge for the afternoon.",
+      "type": "meal"
+    },
+    {
+      "id": 149,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "activity": "Art & Painting",
+      "description": "Experiment with paints and art materials to create original work and express ideas.",
+      "type": "learning"
+    },
+    {
+      "id": 150,
+      "nurseryId": 2,
+      "classId": 3,
+      "day": "thursday",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "activity": "Pick-up",
+      "description": "Gather belongings, share a brief day update with a teacher, and get ready to go home.",
+      "type": "routine"
+    }
+  ]
+}
