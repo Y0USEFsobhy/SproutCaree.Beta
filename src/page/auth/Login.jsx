@@ -98,7 +98,7 @@ export default function Login() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="sara@sunshine.com"
+              placeholder="name@nursery.com"
               autoComplete="email"
               required
               className={fieldClass}
