@@ -12,6 +12,13 @@ const roleRoutes = {
   // user: "/user",
 };
 
+const demoAccounts = [
+  { role: "Admin", email: import.meta.env.VITE_DEMO_ADMIN_EMAIL },
+  { role: "Teacher", email: import.meta.env.VITE_DEMO_TEACHER_EMAIL },
+  { role: "Parent", email: import.meta.env.VITE_DEMO_PARENT_EMAIL },
+];
+const demoPassword = import.meta.env.VITE_DEMO_PASSWORD;
+
 const fieldClass =
   "min-h-11 w-full rounded-xl border border-[#e8e0d4] bg-white px-4 text-sm text-[#262723] placeholder:text-[#9a9d97] focus:border-brand focus:outline-none focus:ring-2 focus:ring-[#1f7a4d]/30 disabled:bg-[#f5f1ea] disabled:text-[#7a7d77]";
 
@@ -27,6 +34,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [demoRole, setDemoRole] = useState(null);
 
   if (isAuthenticated && user) {
     const destination = roleRoutes[user.role] ?? "/unauthorized";
@@ -57,17 +65,34 @@ export default function Login() {
     }
   };
 
+  const handleDemo = async (account) => {
+    setError("");
+    setDemoRole(account.role);
+
+    try {
+      const userData = await loginApi(account.email, demoPassword);
+      dispatch(login(userData));
+
+      const destination = roleRoutes[userData.role];
+      if (!destination) {
+        setError("Invalid user role");
+        return;
+      }
+
+      navigate(destination, { replace: true });
+    } catch {
+      setError("Could not start the demo. Please try again.");
+    } finally {
+      setDemoRole(null);
+    }
+  };
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#f5f1ea] px-4 py-10">
       <div className="w-full max-w-md rounded-3xl border border-[#e8e0d4] bg-white p-8 shadow-xl sm:p-10">
-
         <div className="mb-8 text-center">
           <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-2xl bg-[#1f7a4d]/10">
-            <img
-              className="scale-150"
-              src="logo.png"
-              alt="logo"
-            />
+            <img className="scale-150" src="logo.png" alt="logo" />
           </div>
 
           <h1 className="text-3xl font-bold tracking-tight text-[#262723]">
@@ -80,7 +105,6 @@ export default function Login() {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-
           {error && (
             <p className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
               {error}
@@ -142,11 +166,29 @@ export default function Login() {
           </button>
         </form>
 
-        {/* <p className="mt-6 text-center text-xs text-[#9a9d97]">
-          Try: sara@sunshine.com / 123456
-        </p> */}
+        <div className="mt-8 border-t border-[#e8e0d4] pt-6">
+          <h2 className="text-sm font-semibold text-[#262723]">
+            Just exploring?
+          </h2>
+          <p className="mt-1 text-xs text-[#555C57]">
+            Try the app instantly as any role. No sign-up needed.
+          </p>
+
+          <div className="mt-4 grid grid-cols-3 gap-3">
+            {demoAccounts.map((account) => (
+              <button
+                key={account.role}
+                type="button"
+                onClick={() => handleDemo(account)}
+                disabled={loading || demoRole !== null}
+                className="min-h-11 rounded-full bg-[#e3f2ea] px-3 text-sm font-semibold text-brand transition hover:bg-[#d3ebdf] focus:outline-none focus:ring-2 focus:ring-[#1f7a4d]/40 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {demoRole === account.role ? "Opening..." : account.role}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
 }
-
